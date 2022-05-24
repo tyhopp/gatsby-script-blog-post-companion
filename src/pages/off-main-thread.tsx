@@ -1,28 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Script, ScriptStrategy } from "gatsby";
 import { markedUrl } from "../utils/constants";
 import { Demo } from "../components/demo";
 
 const OffMainThreadPage = () => {
-  const [loaded, setLoaded] = useState<boolean>(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // @ts-ignore marked is a global
-      const knownLoaded = typeof marked === `object`;
-
-      if (knownLoaded || performance.now() > 10000) {
-        setLoaded(knownLoaded);
-        clearInterval(interval);
-      }
-    }, 100);
-  }, []);
-
   return (
     <main>
       <title>Marked App - Off main thread Strategy</title>
       <h1>Marked App - Off main thread Strategy</h1>
-      <Demo loaded={loaded} />
+      <Demo loaded={true} />
       <Script
         src={markedUrl}
         strategy={ScriptStrategy.offMainThread}
