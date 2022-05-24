@@ -12,7 +12,7 @@ const IdlePage = () => {
       <title>Marked App - Idle Strategy</title>
       <h1>Marked App - Idle Strategy</h1>
       <Stats perfRecord={perfRecord} />
-      <Demo perfRecord={perfRecord} />
+      <Demo loaded={Boolean(perfRecord)} />
       <Script
         src={markedUrl}
         strategy={ScriptStrategy.idle}

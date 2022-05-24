@@ -12,7 +12,7 @@ const PostHydratePage = () => {
       <title>Marked App - Post Hydrate Strategy</title>
       <h1>Marked App - Post Hydrate Strategy</h1>
       <Stats perfRecord={perfRecord} />
-      <Demo perfRecord={perfRecord} />
+      <Demo loaded={Boolean(perfRecord)} />
       <Script
         src={markedUrl}
         strategy={ScriptStrategy.postHydrate}

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, ScriptStrategy } from "gatsby";
+import { ScriptStrategy } from "gatsby";
 import "../styles/index.css";
 
 const pages = [
@@ -29,7 +29,7 @@ const IndexPage = () => {
       <ul>
         {pages.map((page) => (
           <li key={page}>
-            <Link to={`/${page}`}>{page}</Link>
+            <a href={`/${page}`}>{page}</a>
           </li>
         ))}
       </ul>

@@ -2,11 +2,7 @@ import React, { useState, useEffect } from "react";
 import { defaultText } from "../utils/constants";
 import "../styles/demo.css";
 
-export const Demo = ({
-  perfRecord,
-}: {
-  perfRecord: PerformanceResourceTiming | undefined;
-}): JSX.Element => {
+export const Demo = ({ loaded }: { loaded: boolean }): JSX.Element => {
   const [text, setText] = useState<string>(defaultText);
   const [html, setHtml] = useState<string>(``);
 
@@ -17,7 +13,7 @@ export const Demo = ({
       const renderedHtml = marked.parse(text);
       setHtml(renderedHtml);
     }
-  }, [text, perfRecord]);
+  }, [text, loaded]);
 
   return (
     <>
