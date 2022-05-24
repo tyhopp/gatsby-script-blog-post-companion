@@ -1,0 +1,47 @@
+main {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0.5em auto;
+  max-width: 850px;
+}
+
+.demo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.demo > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-markdown {
+  margin-right: 1em;
+}
+
+.demo-markdown-input {
+  width: 400px;
+  height: 500px;
+  padding: 5px;
+  margin: 0;
+  border-radius: 2px;
+  overflow-y: scroll;
+}
+
+.demo-html-rendered {
+  width: 400px;
+  height: 500px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid;
+  overflow-y: scroll;
+}
+
+.demo-title {
+  margin-bottom: 0;
+}
+
+blockquote {
+  padding-left: 0.5em;
+  margin-left: 1.5em;
+  border-left: 2px solid;
+}
