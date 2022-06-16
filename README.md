@@ -1,6 +1,6 @@
 # Gatsby Script Blog Post Companion
 
-This is the companion project to a forthcoming blog post on [https://gatsbyjs.com/blog](https://gatsbyjs.com/blog) about the Gatsby Script component.
+This is the companion project to the [Using Gatsby Script Component to Decrease Page Load Times](https://www.gatsbyjs.com/blog/using-gatsby-script-component-to-decrease-page-load-times) blog post on [gatsbyjs.com](https://gatsbyjs.com).
 
 See the [release notes](https://www.gatsbyjs.com/docs/reference/release-notes/v4.15/#script-component) and [reference documentation](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-script/) for more information about the Gatsby Script component.
 
